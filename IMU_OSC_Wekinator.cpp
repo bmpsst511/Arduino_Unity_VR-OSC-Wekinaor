@@ -14,7 +14,7 @@
 #include <WiFiUDP.h>
 #include <OSCMessage.h>
 
-/** WIFI¤À¨É¾¹³]©w **/
+/** WIFIåˆ†äº«å™¨è¨­å®š **/
 //const char* ssid ="TP-LINK_A7366A";
 //const char* pass = "03487150";
 const char* ssid ="Jphone";
@@ -24,7 +24,7 @@ const unsigned int outPort = 6448;
 const unsigned int localPort = 6969;
 WiFiUDP Udp;
 WiFiServer server(outPort);
-/** WIFI¤À¨É¾¹³]©w **/
+/** WIFIåˆ†äº«å™¨è¨­å®š **/
 
 String RotateX, RotateY, RotateZ, AccelX, AccelY, AccelZ;
 
@@ -60,7 +60,7 @@ void displaySensorDetails(void)
 void setup() {
   Serial.begin(9600);
   
-  /** ¤W¹q«á°õ¦æWIFI³s½u»PÅã¥Ü¬ÛÃö¸ê°T**/
+  /** ä¸Šé›»å¾ŒåŸ·è¡ŒWIFIé€£ç·šèˆ‡é¡¯ç¤ºç›¸é—œè³‡è¨Š**/
       // Connect to WiFi network
     Serial.println();
     Serial.println();
@@ -86,7 +86,7 @@ void setup() {
 #else
     Serial.println(Udp.localPort());
 #endif
-  /** ¤W¹q«á°õ¦æWIFI³s½u»PÅã¥Ü¬ÛÃö¸ê°T**/
+  /** ä¸Šé›»å¾ŒåŸ·è¡ŒWIFIé€£ç·šèˆ‡é¡¯ç¤ºç›¸é—œè³‡è¨Š**/
   
    /* Initialise the sensor */
   if(!bno.begin())
@@ -161,7 +161,7 @@ void loop() {
   Serial.print((int)euler.y(), DEC); 
   Serial.println();
   
-  /**¶}©lµo°e¸ê®Æµ¹Serverºİ **/
+  /**é–‹å§‹ç™¼é€è³‡æ–™çµ¦Serverç«¯ **/
     OSCMessage msg("/wek/inputs");
     msg.add((float)euler.x());
     msg.add((float)euler.y());
@@ -172,7 +172,7 @@ void loop() {
     //msg.empty();
     //delay(500);
     delay(BNO055_SAMPLERATE_DELAY_MS);
-  /**¶}©lµo°e¸ê®Æµ¹Serverºİ **/
+  /**é–‹å§‹ç™¼é€è³‡æ–™çµ¦Serverç«¯ **/
 
 }
  
