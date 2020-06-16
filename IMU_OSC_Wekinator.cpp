@@ -15,11 +15,9 @@
 #include <OSCMessage.h>
 
 /** WIFI分享器設定 **/
-//const char* ssid ="TP-LINK_A7366A";
-//const char* pass = "03487150";
-const char* ssid ="Jphone";
-const char* pass = "nethika609";
-const IPAddress outIp(172,20,10,6);
+const char* ssid ="WIFI名稱";
+const char* pass = "WIFI密碼";
+const IPAddress outIp(XXX,XXX,XXX,XXX);//輸入WIFI給電腦的IP位址
 const unsigned int outPort = 6448;
 const unsigned int localPort = 6969;
 WiFiUDP Udp;
@@ -161,7 +159,7 @@ void loop() {
   Serial.print((int)euler.y(), DEC); 
   Serial.println();
   
-  /**開始發送資料給Server端 **/
+  /**開始發送資料給Wekinator **/
     OSCMessage msg("/wek/inputs");
     msg.add((float)euler.x());
     msg.add((float)euler.y());
@@ -172,7 +170,7 @@ void loop() {
     //msg.empty();
     //delay(500);
     delay(BNO055_SAMPLERATE_DELAY_MS);
-  /**開始發送資料給Server端 **/
+  /**開始發送資料給Wekinator **/
 
 }
  
