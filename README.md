@@ -49,25 +49,36 @@ Wekinator允許用戶通過演示人類行為和電腦互動來構建新的互�
 本篇教學文章主要在於帶領大家實作入門Wekinator跟OSC如何整合應用
 
 首先打開先前已經下載好的Continuously-controlled drum Example，在setup()裡會看到設定好的Port，12000與6448。
+
 ![](https://i.imgur.com/L2znbyQ.png)
+
 接著打開Wekinator會看到預先設定好的6448與12000，這時要修改的是outputs，由於鼓的音源輸出檔為三個因此將outputs數量改為3。
+
 ![](https://i.imgur.com/rv3Hlbp.png)
+
 按下Next後，就會進入到Wekinator的控制介面，在OSC In 與 OSC out 為黃燈的狀態代表目前還沒收到與輸出資料
+
 ![](https://i.imgur.com/7W0mFfL.png)
+
 這時候可以在Processing裡執行鼓的範例並按下Wek介面裡randomize的按鈕，鼓的範例介面就會隨機發出音樂，如果沒有成功，再回去檢查Processing裡的範例程式Port的設定是否與Wekinator的設定一致。
+
 ![](https://i.imgur.com/hqtxOYk.png)
+
 到這裡基本上可以確認現在擁有音樂輸出的功能了，接下來我們要給定輸入的資料，這裡以慣性感測器為例，而關於慣性感測器BNO055的教學可以參考我以前的教學內容找到詳情
 請見:[**實作九軸慣性感測器於Unity內即時無線傳輸控制方塊**](https://github.com/bmpsst511/Arduino_Wireless_Sensors/tree/master/IMU%20BNO055)
 
 至於與OSC與Wekinator的程式在以下的連結
-請下載我GITHUB裡寫好的[**慣性感測器資料Push給OSC**](https://github.com/bmpsst511/Arduino_Unity_VR-OSC-Wekinaor/blob/master/IMU_OSC_Wekinator.cpp)
+請下載我GITHUB裡寫好的[**慣性感測器資料Push給OSC**](https://github.com/bmpsst511/Arduino_Unity_VR-OSC-
+Wekinaor/blob/master/IMU_OSC_Wekinator.cpp)
 
 在程式裡面我修改了慣性感測器給Wekinator的outPort為6448，是原始Wekinator預設的。而localPort更改為6969，目的是為了不跟Processing與Wekinator的12000Port衝突。
 
 ![](https://i.imgur.com/XXYN7pS.png)
 
 當程式燒入Wemos D1 mini後與Wekinator相連，當看到OSC In亮綠燈，並確認收到感測器傳來的數值。
+
 ![](https://i.imgur.com/KjONx61.png)
+
 ![](https://i.imgur.com/BsyMEfy.png)
 
 ---
