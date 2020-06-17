@@ -63,6 +63,7 @@ Wekinator允許用戶通過演示人類行為和電腦互動來構建新的互�
 請下載我GITHUB裡寫好的[**慣性感測器資料Push給OSC**](https://github.com/bmpsst511/Arduino_Unity_VR-OSC-Wekinaor/blob/master/IMU_OSC_Wekinator.cpp)
 
 在程式裡面我修改了慣性感測器給Wekinator的outPort為6448，是原始Wekinator預設的。而localPort更改為6969，目的是為了不跟Processing與Wekinator的12000Port衝突。
+
 ![](https://i.imgur.com/XXYN7pS.png)
 
 當程式燒入Wemos D1 mini後與Wekinator相連，當看到OSC In亮綠燈，並確認收到感測器傳來的數值。
