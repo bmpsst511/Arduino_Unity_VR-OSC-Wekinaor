@@ -68,8 +68,7 @@ Wekinator允許用戶通過演示人類行為和電腦互動來構建新的互�
 請見:[**實作九軸慣性感測器於Unity內即時無線傳輸控制方塊**](https://github.com/bmpsst511/Arduino_Wireless_Sensors/tree/master/IMU%20BNO055)
 
 至於與OSC與Wekinator的程式在以下的連結
-請下載我GITHUB裡寫好的[**慣性感測器資料Push給OSC**](https://github.com/bmpsst511/Arduino_Unity_VR-OSC-
-Wekinaor/blob/master/IMU_OSC_Wekinator.cpp)
+請下載我GITHUB裡寫好的[**慣性感測器資料Push給OSC**](https://github.com/bmpsst511/Arduino_Unity_VR-OSC-Wekinaor/blob/master/IMU_OSC_Wekinator.cpp)
 
 在程式裡面我修改了慣性感測器給Wekinator的outPort為6448，是原始Wekinator預設的。而localPort更改為6969，目的是為了不跟Processing與Wekinator的12000Port衝突。
 
