@@ -49,7 +49,9 @@ Wekinator允許用戶通過演示人類行為和電腦互動來構建新的互�
 本篇教學文章主要在於帶領大家實作入門Wekinator跟OSC如何整合應用
 
 首先打開先前已經下載好的Continuously-controlled drum Example，在setup()裡會看到設定好的Port，12000與6448
+
 ![](https://i.imgur.com/L2znbyQ.png)
+
 接著打開Wekinator會看到預先設定好的6448與12000，這時要修改的是outputs，由於鼓的音源輸出檔為三個因此將outputs數量改為3。
 ![](https://i.imgur.com/rv3Hlbp.png)
 按下Next後，就會進入到Wekinator的控制介面，在OSC In 與 OSC out 為黃燈的狀態代表目前還沒收到與輸出資料
