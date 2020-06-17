@@ -12,11 +12,11 @@ disqus: hackmd
 ---
 需要的軟&硬體
 ---
-[**Processing**](https://processing.org/)//
-[**Arduino IDE**](https://www.arduino.cc/)//
-[**Wekinator**](http://www.wekinator.org/)//
-[**Continuously-controlled drum Example**](http://www.wekinator.org/examples/)//
-[**BNO055**](https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor)//
+[**Processing**](https://processing.org/)  
+[**Arduino IDE**](https://www.arduino.cc/)  
+[**Wekinator**](http://www.wekinator.org/)  
+[**Continuously-controlled drum Example**](http://www.wekinator.org/examples/)  
+[**BNO055**](https://learn.adafruit.com/adafruit-bno055-absolute-orientation-sensor)  
 [**Wemos D1 mini**](https://opencircuit.shop/Product/WeMos-D1-mini-V3.1-Wifi-Module)
 
 ---
