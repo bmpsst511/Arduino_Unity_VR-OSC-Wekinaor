@@ -72,8 +72,7 @@ Wekinator允許用戶通過演示人類行為和電腦互動來構建新的互�
 ---
 實現
 ---
-{%youtube vLkktgWYUN0 %}
-
+![](https://j.gifs.com/XLGj0V.gif)
 
 
 
